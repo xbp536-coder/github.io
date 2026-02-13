@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS Maths & Tools – Your Name</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 900px; 
+      margin: 0 auto; 
+      padding: 1.5rem; 
+      line-height: 1.6; 
+      background-color: #f9fafc;
+    }
+
+    h1, h2 { 
+      border-bottom: 2px solid #ddd; 
+      padding-bottom: 0.3rem; 
+    }
+
+    .tool {
+      background: white;
+      padding: 1rem;
+      margin: 1.2rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .hint { 
+      background: #f0f8ff; 
+      border-left: 4px solid #0074d9; 
+      padding: 0.5rem 0.75rem; 
+      margin: 0.75rem 0; 
+    }
+
+    label { display: block; margin-top: 0.5rem; }
+
+    input { 
+      padding: 0.4rem; 
+      margin-top: 0.2rem; 
+      width: 150px;
+    }
+
+    button { 
+      margin-top: 0.5rem; 
+      padding: 0.5rem 1rem; 
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .result { 
+      margin-top: 0.8rem; 
+      font-weight: bold; 
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Computer Science Maths & Tools</h1>
+  <p>
+    On this page I experiment with simple computer science maths using HTML, CSS, and JavaScript.
+    Each tool below takes some input, does a calculation, and explains the result.
+  </p>
+
+  <!-- TOOL 1: Factorial -->
+  <div class="tool">
+    <h2>🔢 Factorial Calculator</h2>
+    <div class="hint">
+      Calculates n! (n factorial). Example: 5! = 5 × 4 × 3 × 2 × 1 = 120
+    </div>
+
+    <label>Enter a number:</label>
+    <input type="number" id="factorialInput" min="0">
+    <button onclick="calculateFactorial()">Calculate</button>
+
+    <div class="result" id="factorialResult"></div>
+  </div>
+
+  <!-- TOOL 2: Binary Converter -->
+  <div class="tool">
+    <h2>🔐 Binary ↔ Decimal Converter</h2>
+    <div class="hint">
+      Convert between base-2 (binary) and base-10 (decimal).
+    </div>
+
+    <label>Decimal Number:</label>
+    <input type="number" id="decimalInput">
+    <button onclick="toBinary()">Convert to Binary</button>
+
+    <label>Binary Number:</label>
+    <input type="text" id="binaryInput">
+    <button onclick="toDecimal()">Convert to Decimal</button>
+
+    <div class="result" id="conversionResult"></div>
+  </div>
+
+  <!-- TOOL 3: Complexity Estimator -->
+  <div class="tool">
+    <h2>📈 O(n²) Complexity Estimator</h2>
+    <div class="hint">
+      Estimates number of operations for an O(n²) algorithm.
+    </div>
+
+    <label>Enter input size (n):</label>
+    <input type="number" id="complexityInput" min="0">
+    <button onclick="estimateComplexity()">Estimate</button>
+
+    <div class="result" id="complexityResult"></div>
+  </div>
+
+<script>
+  function calculateFactorial() {
+    let n = parseInt(document.getElementById("factorialInput").value);
+    if (n < 0 || isNaN(n)) {
+      document.getElementById("factorialResult").innerText = "Please enter a valid non-negative number.";
+      return;
+    }
+
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+      result *= i;
+    }
+
+    document.getElementById("factorialResult").innerText = n + "! = " + result;
+  }
+
+  function toBinary() {
+    let decimal = parseInt(document.getElementById("decimalInput").value);
+    if (isNaN(decimal)) {
+      document.getElementById("conversionResult").innerText = "Enter a valid decimal number.";
+      return;
+    }
+
+    document.getElementById("conversionResult").innerText = 
+      decimal + " in binary = " + decimal.toString(2);
+  }
+
+  function toDecimal() {
+    let binary = document.getElementById("binaryInput").value;
+    if (!/^[01]+$/.test(binary)) {
+      document.getElementById("conversionResult").innerText = "Enter a valid binary number.";
+      return;
+    }
+
+    document.getElementById("conversionResult").innerText = 
+      binary + " in decimal = " + parseInt(binary, 2);
+  }
+
+  function estimateComplexity() {
+    let n = parseInt(document.getElementById("complexityInput").value);
+    if (isNaN(n) || n < 0) {
+      document.getElementById("complexityResult").innerText = "Enter a valid positive number.";
+      return;
+    }
+
+    let operations = n * n;
+    document.getElementById("complexityResult").innerText =
+      "Estimated operations for O(n²): " + operations;
+  }
+</script>
+
+</body>
+</html>
+
+ 
