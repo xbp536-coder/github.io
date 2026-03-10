@@ -1,215 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aybike Pembecicek – Computer Science Undergraduate</title>
-  <link rel="stylesheet" href="/github.io/style.css"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aybike Pembecicek – Computer Science</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Aybike Pembecicek</h1>
-    <p class="tagline">Computer Science undergraduate – interested in web development and data</p>
-  </header>
- 
-  <main>
-     <section id="hero">
-    <h2>Hello, I’m Aybike</h2>
-    <p><strong>Computer Science undergraduate</strong> at the University of York.</p>
-    <p><em>Interested in backend development and cloud computing.</em></p>
-    <p><strong>What I do:</strong> I enjoy building reliable, data-driven applications that solve real problems for users.</p>
-    <p><a href="#projects">View my projects</a> | <a href="YourCVLink.pdf">Download my CV</a></p>
-     <p>
-  <a href="maths.html">View my CS Maths & Tools page</a>
-</p>
-  
-  </section>
- 
-  <!-- About section -->
-  <section id="about">
-    <h2>About me</h2>
-    <p>I am a first-year Computer Science student learning the fundamentals of programming, web development, computer architecture, and databases.</p>
-    <p>I am currently looking for internship and placement opportunities where I can develop my skills in web development and data engineering.</p>
-    <p>Outside my studies, I enjoy hackathons, coding challenges, and working on small side projects.</p>
-  </section>
- 
-  <!-- Projects section -->
-  <section id="projects">
-    <h2>Featured projects</h2>
- 
-  <!-- Skills section -->
-  <section id="skills">
-    <h2>Skills and tools</h2>
-    <p><strong>Languages:</strong> Python, Java, HTML, CSS, JavaScript, SQL</p>
-    <p><strong>Frameworks and tools:</strong> Git, GitHub, VS Code</p>
-    <p><strong>Interests:</strong> Web development, data engineering, cloud computing</p>
-  </section>
- 
-  <!-- Contact section -->
-  <!-- Contact Form — paste into your HTML where you want the form -->
+<body class="light">
+
+<header>
+<h1>Aybike Pembecicek</h1>
+<p class="tagline">Computer Science undergraduate – University of York</p>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#blog">Blog</a>
+<a href="#contact">Contact</a>
+<a href="maths.html" class="button secondary">CS Maths & Tools</a>
+<button id="dark-toggle">🌙</button>
+</nav>
+</header>
+
+<main>
+<section id="hero">
+<h2>Hello, I'm Aybike</h2>
+<p>I am a Computer Science undergraduate interested in backend development and data engineering.</p>
+<a class="button" href="#projects">View my projects</a>
+</section>
+
+<section id="about">
+<h2>About me</h2>
+<p>I am a first-year Computer Science student at the University of York, learning programming, computer architecture, web development, and databases.</p>
+<p>I enjoy building small applications and understanding how software systems work from the inside.</p>
+<p>Currently I am looking for internship or placement opportunities to develop my programming and problem-solving skills.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Personal website built using HTML, CSS, and JavaScript to showcase my learning and projects.</p>
+</div>
+<div class="project">
+<h3>Student Database</h3>
+<p>SQL database project designed to store and retrieve student records.</p>
+</div>
+<div class="project">
+<h3>Java Coursework Project</h3>
+<p>Java program for university coursework focusing on basic algorithms.</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<p><strong>Programming:</strong> Python, Java, JavaScript</p>
+<p><strong>Web:</strong> HTML, CSS</p>
+<p><strong>Database:</strong> SQL</p>
+<p><strong>Tools:</strong> Git, GitHub, VS Code, Linux</p>
+</section>
+
+<section id="blog">
+<h2>Learning Notes</h2>
+<article>
+<h3>What is a CPU Cache?</h3>
+<p>CPU cache is a very fast memory inside the processor that stores frequently used data for quick access.</p>
+</article>
+<article>
+<h3>Database Normalisation</h3>
+<p>Normalisation structures a database to reduce duplicated data and improve consistency.</p>
+</article>
+</section>
+
 <section id="contact">
-<h2>Get In Touch</h2>
-<form id="contact-form">
-<div>
-<label for="name">Aybike Pembecicek</label>
-<input type="text" id="name" name="name" required
-placeholder="Aybike Pembecicek" />
-</div>
-<div>
-<label for="email">xbp536@york.ac.uk</label>
-<input type="email" id="email" name="email" required
-placeholder="xbp536@york.ac.uk" />
-</div>
-<div>
-<label for="message">Message</label>
-<textarea id="message" name="message" required
-placeholder="Say hello..." rows="5"></textarea>
-</div>
-<button type="submit" id="submit-btn">Send Message</button>
-<p id="form-status"></p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:xbp536@york.ac.uk">xbp536@york.ac.uk</a></p>
+<p>
+<a href="https://github.com/xbp536-coder">GitHub</a> | 
+<a href="#">LinkedIn</a>
+</p>
+
+<form>
+<input type="text" placeholder="Your name" required>
+<input type="email" placeholder="Your email" required>
+<textarea placeholder="Your message"></textarea>
+<button type="submit">Send message</button>
 </form>
 </section>
-    <p>Email: <a href="mailto:xbp536@york.ac.uk">xbp536@york.ac.uk</a></p>
-    <p>Location: York, United Kingdom</p>
-  <p>Profiles: 
-      <a href="https://github.com/xbp536-coder">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/your-link/">LinkedIn</a>
-</section>
-    </p>
-  </section>
-    <section id="skills">
-  <h2>Skills and tools</h2>
-  <p><strong>Programming:</strong> Python (used in coursework projects), Java (first-year assignments), JavaScript (portfolio website and small apps).</p>
-  <p><strong>Web and databases:</strong> HTML, CSS, SQL (used to design and query simple databases in class).</p>
-  <p><strong>Tools:</strong> Git, GitHub, VS Code, Linux command line.</p>
-  <p><strong>Teamwork and communication:</strong> Collaborated on group coursework, wrote project reports, and presented solutions to classmates.</p>
-</section>
-     <!-- Now / Goals section -->
-  <section id="now">
-    <h2>What I am working on now</h2>
-    <p>
-      Right now I am learning SQL for working with databases and practising Java programming
-      to strengthen my understanding of algorithms and data structures.
-    </p>
-    <p>
-      Over the next year I aim to build small web applications that connect a web front end
-      to a real database, so I can practise full-stack development and data handling.
-    </p>
-    <p>
-      I am particularly interested in roles and projects related to web development and data engineering,
-      where I can design efficient systems and work with real-world datasets.
-    </p>
-  </section>
-     <!-- Blog / Writing section -->
-  <section id="blog">
-    <h2>Blog and learning notes</h2>
- 
-    <article>
-      <h3>What is a CPU cache? (short explanation)</h3>
-      <p><strong>Date:</strong> 10 February 2026</p>
-      <p>
-        A CPU cache is a small, very fast type of memory inside the processor. 
-        It stores copies of data that the CPU uses often, so the CPU does not
-        have to wait for slower main memory (RAM). This makes programs run faster.
-      </p>
-    </article>
- 
-    <article>
-      <h3>Intro to normalisation in databases</h3>
-      <p><strong>Date:</strong> 10 February 2026</p>
-      <p>
-        Normalisation is the process of organising tables in a database so that 
-        each table focuses on one topic and there is minimal duplicated data.
-        This helps keep the data consistent and easier to maintain.
-      </p>
-    </article>
- 
-    <p>
-      I use this section to write short explanations of ideas from computer architecture,
-      databases, and other modules, so I remember them and can show my understanding.
-    </p>
-  </section>
-    <section id="production-diary">
-  <h2>Production diary – Week 15</h2>
-  <p><strong>Date:</strong> 14 February 2026</p>
-  <p>
-    This week I have started to create an online protfolio.
-    I focused on creating main sections and improving my CS Maths&Tools page.
-  </p>
-  <p>
-    I am most happy with the CS Maths&Tools page. 
-  </p>
-  <p>
-   I didn’t face any major difficulties with the things I learned this week.
-  </p>
-  <p>
-    This week, I learned how to edit a website and add a new page to my portfolio.
-  </p>
-  <p>
-    Next time I want to improve my project sections and rewrite my goals section.
-  </p>
-</section>
- 
-  </main>
-  <script>
-// ── Supabase config ────────────────────────────────────────────-
-// Replace these two values with YOUR project URL and anon key
-const SUPABASE_URL = "https://igdufbspnrdzrpwydgoi.supabase.co";
-const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlnZHVmYnNwbnJkenJwd3lkZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNjcyNjUsImV4cCI6MjA4ODY0MzI2NX0.9AzzgKkHhbsNpUrxwQ6jo8sCcgeCk9nTPCGm7vn3wg0";
-// ── Form submission handler ──────────────────────────────────────
-document.getElementById("contact-form")
-.addEventListener("submit", async function (event) {
-// Prevent the default browser form submission (page reload)
-event.preventDefault();
-  // Grab the form values
-const name = document.getElementById("name").value.trim();
-const email = document.getElementById("email").value.trim();
-const message = document.getElementById("message").value.trim();
-const btn = document.getElementById("submit-btn");
-const status = document.getElementById("form-status");
-// Disable the button while we send (prevents double-submit)
-btn.disabled = true;
-btn.textContent = "Sending...";
-status.textContent = "";
-try {
-// Call the Supabase REST API to insert a row
-const response = await fetch(
-`${SUPABASE_URL}/rest/v1/contact_messages`,
-{
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-"apikey": SUPABASE_ANON,
-"Authorization": `Bearer ${SUPABASE_ANON}`,
-"Prefer": "return=minimal"
-},
-body: JSON.stringify({ name, email, message })
-}
-);
-if (response.ok) {
-// Success — show confirmation and reset the form
-status.textContent = "✓ Message sent! I will be in touch soon.";
-status.style.color = "#1A7A4A";
-event.target.reset();
-} else {
-// Supabase returned an error — log it for debugging
-const err = await response.json();
-console.error("Supabase error:", err);
-status.textContent = "Something went wrong. Please try again.";
-status.style.color = "#DC2626";
-}
-} catch (networkError) {
-// Network/connectivity problem
-console.error("Network error:", networkError);
-status.textContent = "Could not connect. Check your internet connection.";
-status.style.color = "#DC2626";
-} finally {
-// Always re-enable the button
-btn.disabled = false;
-btn.textContent = "Send Message";
-}
+
+</main>
+
+<footer>
+<p>© 2026 Aybike Pembecicek</p>
+</footer>
+
+<script>
+// Dark mode toggle
+const toggle = document.getElementById('dark-toggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  document.body.classList.toggle('light');
 });
 </script>
+
 </body>
 </html>
+
+
+
+
  
  
