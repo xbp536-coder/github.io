@@ -16,7 +16,18 @@ body.light{background:var(--bg-light); color:var(--text-light);}
 body.dark{background:var(--bg-dark); color:var(--text-dark);}
 
 /* HEADER */
-header{background:white; padding:30px; text-align:center; border-bottom:1px solid var(--soft);}
+/* HEADER */
+header{
+background:white;
+padding:30px;
+text-align:center;
+border-bottom:1px solid var(--soft);
+
+/* sticky navbar fix */
+position: sticky;
+top: 0;
+z-index: 1000;
+}
 body.dark header{background:#1f2937; border-color:var(--soft-dark);}
 .tagline{color:#6b7280;}
 nav{margin-top:15px;}
