@@ -73,11 +73,13 @@ html {
     scroll-behavior: smooth;
 }
 
-
 section {
-    scroll-margin-top: 150px; 
-    padding-top: 20px;
-    margin-bottom: 50px;
+    /* Header'ın yüksekliği kadar yukarıdan pay bırakır */
+    scroll-margin-top: 160px; 
+    
+    /* Bölümler arası görsel boşluk */
+    padding: 20px 0;
+    margin-bottom: 40px;
 }
 
 
